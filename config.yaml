@@ -1,0 +1,117 @@
+# lightning.pytorch==2.5.0.post0
+seed_everything: true
+trainer:
+  accelerator: auto
+  strategy: auto
+  devices: auto
+  num_nodes: 1
+  precision: null
+  logger:
+  - class_path: lightning.pytorch.loggers.WandbLogger
+    init_args:
+      name: my_experiment
+      save_dir: logs/
+      version: v1
+      offline: false
+      dir: null
+      id: null
+      anonymous: null
+      project: null
+      log_model: false
+      experiment: null
+      prefix: ''
+      checkpoint_name: null
+      entity: null
+      notes: null
+      tags: null
+      config: null
+      config_exclude_keys: null
+      config_include_keys: null
+      allow_val_change: null
+      group: null
+      job_type: null
+      mode: null
+      force: null
+      reinit: null
+      resume: null
+      resume_from: null
+      fork_from: null
+      save_code: null
+      tensorboard: null
+      sync_tensorboard: null
+      monitor_gym: null
+      settings: null
+  - class_path: lightning.pytorch.loggers.CSVLogger
+    init_args:
+      save_dir: logs/
+      name: my_experiment
+      version: v1
+      prefix: ''
+      flush_logs_every_n_steps: 100
+  callbacks:
+  - class_path: lightning.pytorch.callbacks.BatchSizeFinder
+    init_args:
+      mode: power
+      steps_per_trial: 3
+      init_val: 2
+      max_trials: 8
+      batch_arg_name: batch_size
+  - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+    init_args:
+      dirpath: logs//my_experiment/v1
+      filename: best_{epoch:02d}_{val_acc:.2f}
+      monitor: val_acc
+      verbose: false
+      save_last: true
+      save_top_k: 5
+      save_weights_only: false
+      mode: max
+      auto_insert_metric_name: true
+      every_n_train_steps: null
+      train_time_interval: null
+      every_n_epochs: null
+      save_on_train_epoch_end: null
+      enable_version_counter: true
+  fast_dev_run: false
+  max_epochs: null
+  min_epochs: null
+  max_steps: -1
+  min_steps: null
+  max_time: null
+  limit_train_batches: null
+  limit_val_batches: null
+  limit_test_batches: null
+  limit_predict_batches: null
+  overfit_batches: 0.0
+  val_check_interval: null
+  check_val_every_n_epoch: 1
+  num_sanity_val_steps: null
+  log_every_n_steps: 5
+  enable_checkpointing: null
+  enable_progress_bar: null
+  enable_model_summary: null
+  accumulate_grad_batches: 1
+  gradient_clip_val: null
+  gradient_clip_algorithm: null
+  deterministic: null
+  benchmark: null
+  inference_mode: true
+  use_distributed_sampler: true
+  profiler: null
+  detect_anomaly: false
+  barebones: false
+  plugins: null
+  sync_batchnorm: false
+  reload_dataloaders_every_n_epochs: 0
+  default_root_dir: null
+model:
+  class_path: models.UNet
+  init_args:
+    learning_rate: 0.001
+data:
+  class_path: data.CIFAR10
+  init_args:
+    batch_size: 64
+optimizer: null
+lr_scheduler: null
+ckpt_path: null

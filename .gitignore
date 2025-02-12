@@ -1,0 +1,18 @@
+# Logs
+logs/
+*.log
+lightning_logs/
+
+# Temporary files
+temp/
+*.tmp
+.data/
+.download/
+.cache/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Checkpoint
+*.ckpt
