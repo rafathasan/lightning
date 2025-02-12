@@ -114,4 +114,4 @@ data:
     batch_size: 64
 optimizer: null
 lr_scheduler: null
-ckpt_path: null
+ckpt_path: logs//my_experiment/v1/last.ckpt
