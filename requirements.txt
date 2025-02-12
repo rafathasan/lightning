@@ -1,4 +1,4 @@
-torch
-torchvision
-lightning
+lightning==2.5.0.post0
+torch==2.6.0+cu117
+torchvision==0.21.0
 jsonargparse[signatures]
