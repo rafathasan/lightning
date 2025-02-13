@@ -113,4 +113,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Made with ❤️ by [Your Name]. Powered by ⚡ PyTorch Lightning and 🧠 Weights & Biases.
+Made with ❤️ by [rafathasan](www.github.com/rafathasan). Powered by ⚡ PyTorch Lightning and 🧠 Weights & Biases.
