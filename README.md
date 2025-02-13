@@ -21,21 +21,20 @@ A clean and structured template for deep learning projects using PyTorch Lightni
 ---
 
 ## 🏁 Getting Started
+1. **Use the Template**
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Install dependencies**
+   - Click the `Use this template` > `Create a new repository`
+   - Enter `Repository name` > `Create repository`
+   - Click the `Code` > `Codespaces` > `Create codespace on main`
+   
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set up WandB**  
+4. **Set up WandB**  
    - Create a free account at [wandb.ai](https://wandb.ai)
-   - Add your API key to environment variables:
+   - Add your API key in `run.sh`:
      ```bash
      export WANDB_API_KEY=your_api_key_here
      ```
