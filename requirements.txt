@@ -1,5 +1,5 @@
-lightning==2
-torch==2
+lightning
+torch
 torchvision
 jsonargparse[signatures]
 wandb
