@@ -68,7 +68,7 @@ Automatically track:
 - Model gradients/parameters
 - Hardware utilization
 
-![WandB Dashboard](https://storage.googleapis.com/wandb-production.appspot.com/lavanyashukla/images/projects/37229/5622b3bd.png?Expires=1739480413&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=eZqjB5OB8OqvlfBCTiM9bBOwmU9%2B1YTFlNcvIkVUxoX2CHJzeeHjzzKcxie7PRrrMsqzloQjvi9ypON9qzOqCQOQfiEGIu8dd8HX2xXyOZU%2FTUfNMtpcg5S84Hg3QVVcac9LgOzyB%2BvBXbv5KJg5DWEw4fr1OUEfy%2FGCcF9qAWW5S1Qx7%2FAqXmrTI7MtaJXIP6t8z4cxrc5WiUeBv%2BGFlAqzg5K8kdvY49hMtQzUsBQzALneHKH3lJ3XfwjXOc4Upci3ccEtymbLHeCanvfY%2FnPvb8vvCca3N8jNn8dttXFwgED8tZpzT0ggfdRcI2SUVkucYJ8wsA0P8noIr39ZxA%3D%3D)  
+![WandB Dashboard](https://docs-beta.wandb.ai/assets/images/quickstart_image-c06aed771fcdd2c38d5abdd76ff77b36.png)
 *Example WandB dashboard output*
 
 ---
