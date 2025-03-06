@@ -3,3 +3,4 @@ torch
 torchvision
 jsonargparse[signatures]
 wandb
+albumentations

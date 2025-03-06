@@ -9,6 +9,7 @@ temp/
 .data/
 .download/
 .cache/
+.*/
 
 # Python cache
 __pycache__/
@@ -16,3 +17,4 @@ __pycache__/
 
 # Checkpoint
 *.ckpt
+.scale*
